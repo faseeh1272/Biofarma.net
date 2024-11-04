@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+        integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* width */
+::-webkit-scrollbar {
+    width: 15px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #e20303; 
+    border-radius: 12px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #ec0505; 
+    }
+        * width */::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #e20303;
+            border-radius: 12px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ec0505;
+        }
+
+        *,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body,
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        body,
+        a {
+            text-decoration: none;
+        }
+        img{
+            max-width: 100%;
+        }
+
+        header {
+            background-color: #032855;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 10px 0px;
+
+        }
+
+        .logo img {
+            width: 300px;
+        }
+
+        ul.menu {
+            display: flex;
+            padding: 0;
+            gap: 20px;
+
+        }
+
+        ul.menu a {
+            color: white;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            display: block;
+            padding: 5px 5px;
+            font-weight: 600;
+            color: white;
+            background-color: #e55123;
+            border-radius: 40px;
+            font-size: 15px;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        section.hero-section {
+            background-image: url('	https://www.biopharmainfo.net/assets/img/capabilities.jpg');
+            position: relative;
+            width: 100%;
+            background-size: cover;
+            padding-bottom: 110px;
+            background-position: center;
+            height: 600px;
+
+        }
+
+        section.hero-section:before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: #0c263cbd;
+
+        }
+
+        .header-content {
+            position: relative;
+            padding: 40px 0px;
+            color: white;
+
+        }
+
+        .first-heading {
+            margin-top: 200px;
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .text-p {
+            text-align: center;
+        }
+
+
+        /* section-two start */
+
+        .section-two{
+            width: 100%;
+        }
+        .data-section-two{
+            background-color: white;
+            border-radius: 10px;
+            
+        }
+        .c-blue{
+            color: #032855;
+        }
+        h1.c-blue{
+            font-weight: 1000;
+        }
+        .last-img{
+         border-radius: 10px;
+        }
+        .last{
+            height: 190px;
+        }
+        .h-2{
+            font-weight: 900;
+        }
+        .five{
+            width: 100%;
+        }
+        .one{
+            width: 24%;
+            border-bottom: none;
+            border-right: none;
+            opacity: 0.8;
+        }
+        .one-1{
+            background-color: #f5b4a0;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .two-2{
+            background-color: #cbd3dc;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .three-3{
+            background-color: #f7bdab;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .four-4{
+            background-color: #cbd3dc;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .care-img{
+            margin-top: 15rem;
+            border-radius: 12px;
+        }
+        .six{
+            padding: 20px;
+            background-color:#f7c4b4;
+        }
+        .seven{
+            width: 100%;
+            padding: 20px;
+            background-color: #cdd4dd;
+        }
+        .eight{
+            width: 100%;
+            padding: 20px;
+            background-color: #f5b29d;
+
+        }
+        .btn-browse{
+background-color: #032855;
+padding: 15px 5px;
+color: white;
+margin-right: 3px;
+border-radius: 25px;
+outline: 0;
+font-size: 15px;
+        }
+        .btn-browse .fa-greater-than{
+            margin: 3px;
+        }
+        .nine{
+            width: 100%;
+            padding: 20px;
+            background-color:#cdd4dd;
+
+        }
+        .footer-section{
+    padding: 20px;
+    background-color: #032855;
+    color: white;
+    }
+    .footer-icons a{
+    padding: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    color: #032855;
+    
+    }
+       
+
+    </style>
+</head>
+
+<body>
+
+    <section class="hero-section">
+        <header>
+            <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <img src="https://www.biopharmainfo.net/assets/img/logo/logo.png" alt="">
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="../index.html">
+                                Capabilites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about us.html">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html">
+                                Active Trails
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                Research Sites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                Connect and Learn
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0);" class="btn btn-primary">Find a Clinical Trail &nbsp; &nbsp; <i
+                            class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
+                    <div class="col-lg-6 justify-content-center align-items-center fadeInLeft">
+                        <h1 class="first-heading text-align-center">Why Choose Biopharma</h1>
+                        <p class="text-p">Trusted worldwide by research partners and CROs, Biopharma Informatic is
+                            backed by a supportive network that enables it to deliver reliable clinical
+                            trials in various medical research areas, from drugs and devices to
+                            diagnostics and combination product research initiatives.</p>
+                    </div>
+                    <div class="col-lg-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-two mt-5">
+        <div class="container">
+             <div class="row justify-content-between text-center">
+                  <div class="col-lg-3">
+                    <div class="data-section-two">
+                        <img src="https://www.biopharmainfo.net/assets/img/icon/experience.png" alt="" class="icon-img">
+                    <h1 class="c-blue">13+</h1>
+                    <h4 class="c-blue">
+                        13+ Years of Proven
+                    </h4>
+                    <h4 class="c-blue">
+                        Expertise
+                    </h4>
+                <img src="./images/4.webp" alt="" class="last-img">
+                    </div>
+
+                  </div>
+                  
+                  <div class="col-lg-3">
+                    <div class="data-section-two">
+                    <img src="./images/leadership (1).png" alt="" class="icon-img">
+                    <h1 class="c-blue">100+</h1>
+                    <h4 class="c-blue">
+                        Network of 100+ Skilled
+                    </h4>
+                    <h4 class="c-blue">
+                        Investigators
+                    </h4>
+                <img src="./images/3.webp" alt="" class="last-img">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="data-section-two">
+                    <img src="./images/hiring (1).png" alt="" class="icon-img">
+                    <h1 class="c-blue">16+</h1>
+                    <h4 class="c-blue">
+                        Covering 16 Specialized
+                    </h4>
+                    <h4 class="c-blue">
+                        Fields
+                    </h4>
+                <img src="./images/2.webp" alt="" class="last-img">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="data-section-two ">
+                    <img src="./images/hospital (1).png" alt="" class="icon-img">
+                    <h1 class="c-blue">30+</h1>
+                    <h4 class="c-blue">
+                        Operating in 30+ Active
+                    </h4>
+                    <h4 class="c-blue">
+                        Sites
+                    </h4>
+                <img src="./images/location2.webp" alt="" class="last-img last">
+                    </div>
+                  </div>
+                  
+             </div>
+        </div>
+    </section>
+    <section class="three ">
+        <div class="container">
+            <div class="row m-5">
+                <div class="col-lg-2"> </div>
+                <div class="col-lg-8 text-center">
+                    <h1 class="c-blue h-2">Accelerating Health Research For</h1>
+                    <h1 class="c-blue h-2">Everyday Living</h1>
+                </div>
+                <div class="col-lg-2"> </div>
+            </div>
+        </div>
+    </section>
+    <section class="four">
+       <p class="text-center">Biopharma Informatic, leveraging its extensive experience with sponsors and CROs, ensures the highest standards while effectively managing even the most challenging clinical trials.</p>
+       <p class="text-center">Continue reading to discover how Biopharma Informatic delivers clinical excellence for each trial with its unique approach.</p>
+    </section>
+    <section class="five">
+        <div class="container-fluid">
+                <div class="row p-3 m-5">
+            <div class="col-lg-3 one one-1 text-start">
+                <h5 class="c-blue">Insights Aligned</h5>
+                <h2 class="c-blue">Streamlined Site</h2>
+                <h3 class="c-blue">Operations</h3>
+                <p>Swift site selection with rapid</p>
+                <p>contracting procedures</p>
+                <p>Learn More</p>
+            </div>
+            <div class="col-lg-3 one two-2 text-start">
+                <h5 class="c-blue">Quick Launch</h5>
+                <h2 class="c-blue">Efficient Onboarding</h2>
+                <h3 class="c-blue">Processes</h3>
+                <p>Centralized study commencement and</p>
+                <p>digital handling of source, regulatory</p>
+                <p>and documentation</p>
+                <p>Learn More</p>
+            </div>
+            <div class="col-lg-3 one three-3 text-start">
+                <h5 class="c-blue">Active Participation</h5>
+                <h2 class="c-blue">Outstanding Patient</h2>
+                <h3 class="c-blue">Engagement</h3>
+                <p>Exceptional commitment and</p>
+                <p>participation from patients in the</p>
+                <p>program or study</p>
+                <p>Learn More</p>
+            </div>
+            <div class="col-lg-3 one four-4 text-start">
+                <h5 class="c-blue">Insights Aligned</h5>
+                <h2 class="c-blue">Streamlined Site</h2>
+                <h3 class="c-blue">Operations</h3>
+                <p>Swift site selection with rapid</p>
+                <p>contracting procedures</p>
+                <p>Learn More</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="six">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="c-blue ">Active Participation</p>
+                    <h3 class="c-blue fw-bold">Exceptional Approaches To Involve And Maintain</h3>
+                    <h3 class="c-blue fw-bold">Patient Participation</h3>
+                    <p class="c-blue">With a leading-edge technology team and dedicated Patient Engagement and Recruitment Centers, Biopharma Informatic is designed to precisely predict and achieve enrollment and retention goals, especially for challenging and high-volume research programs. The constant developments made by Biopharma Informatic focus on improving processes such as recruitment, screening, consenting, retention, and follow-up for both clients and participants.</p>
+                    <p class="c-blue">To support local outreach, each Biopharma Informatic site is backed by full-time recruitment specialists. These sites are strategically situated in diverse demographic areas to ensure fair representation in clinical trials.</p>
+                    
+                    <p class="c-blue"><i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp;
+                        Immediate enrollment support available at the beginning of the study.</p>
+                        <p class="c-blue"><i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp;Access to exclusive databases, including proprietary, physician, and practice &nbsp;&nbsp;&nbsp;&nbsp;data.</p>
+                        <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;
+                            In-house advertising solutions surpassing the effectiveness of central&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;campaigns.</p>
+                            <p class="c-blue">
+                                &nbsp;&nbsp;&nbsp; Intensive community outreach and initiatives to enhance diversity.</p>
+                                <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;&nbsp;&nbsp;Programs focused on participant adherence and retention.</p>
+                                <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;&nbsp;&nbsp;Specialty care sites offer access to unique populations, procedures, and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facilities.</p>
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="./images/patient-care.webp" alt="" class="care-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seven">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="c-blue"> Insights Aligned</p>
+                    <h3 class="c-blue fw-bold">Fully Connected Operations for Faster</h3>
+                    <h3 class="c-blue fw-bold">Site Selection</h3>
+                    <p class="c-blue">With a leading-edge technology team and dedicated Patient Engagement and Recruitment Centers, Biopharma Informatic is designed to precisely predict and achieve enrollment and retention goals, especially for challenging and high-volume research programs. The constant developments made by Biopharma Informatic focus on improving processes such as recruitment, screening, consenting, retention, and follow-up for both clients and participants.</p>
+                    <p class="c-blue">To support local outreach, each Biopharma Informatic site is backed by full-time recruitment specialists. These sites are strategically situated in diverse demographic areas to ensure fair representation in clinical trials.</p>
+                    
+                    <p class="c-blue"><i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp;
+                        Immediate enrollment support available at the beginning of the study.</p>
+                        <p class="c-blue"><i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp;Access to exclusive databases, including proprietary, physician, and practice &nbsp;&nbsp;&nbsp;&nbsp;data.</p>
+                        <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;
+                            In-house advertising solutions surpassing the effectiveness of central&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;campaigns.</p>
+                            <p class="c-blue">
+                                &nbsp;&nbsp;&nbsp; Intensive community outreach and initiatives to enhance diversity.</p>
+                                <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;&nbsp;&nbsp;Programs focused on participant adherence and retention.</p>
+                                <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;&nbsp;&nbsp;Specialty care sites offer access to unique populations, procedures, and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facilities.</p>
+                                <a  class="btn-browse" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;Browse Biofarma Sites <i class="fa-solid fa-greater-than"></i></a>
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="./images/men-research.webp" alt="" class="care-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="eight">
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                <img src="./images/women-doctor.webp" class="care-img" alt="">
+               </div>
+                <div class="col-lg-6">
+                    <p class="c-blue">  Quick Launch</p>
+                    <h3 class="c-blue fw-bold">Creating Standardized Procedures To Promote</h3>
+                    <h3 class="c-blue fw-bold">An Efficient Start up</h3>
+                    <p class="c-blue">With a leading-edge technology team and dedicated Patient Engagement and Recruitment Centers, Biopharma Informatic is designed to precisely predict and achieve enrollment and retention goals, especially for challenging and high-volume research programs. The constant developments made by Biopharma Informatic focus on improving processes such as recruitment, screening, consenting, retention, and follow-up for both clients and participants.</p>
+                    <p class="c-blue">To support local outreach, each Biopharma Informatic site is backed by full-time recruitment specialists. These sites are strategically situated in diverse demographic areas to ensure fair representation in clinical trials.</p>
+                    
+                    <p class="c-blue"><i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp;
+                        Immediate enrollment support available at the beginning of the study.</p>
+                        <p class="c-blue"><i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp;Access to exclusive databases, including proprietary, physician, and practice &nbsp;&nbsp;&nbsp;&nbsp;data.</p>
+                        <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;
+                            In-house advertising solutions surpassing the effectiveness of central&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;campaigns.</p>
+                            <p class="c-blue">
+                                &nbsp;&nbsp;&nbsp; Intensive community outreach and initiatives to enhance diversity.</p>
+                                <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;&nbsp;&nbsp;Programs focused on participant adherence and retention.</p>
+                                <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;&nbsp;&nbsp;Specialty care sites offer access to unique populations, procedures, and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="nine">
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                <img src="./images/doctor-data.webp" class="care-img " alt="">
+               </div>
+                <div class="col-lg-6">
+                    <p class="c-blue"> Impeccable Management</p>
+                    <h3 class="c-blue fw-bold">Consistent Excellence With Precise</h3>
+                    <h3 class="c-blue fw-bold">Delivery Of Data</h3>
+                    <p class="c-blue">With a leading-edge technology team and dedicated Patient Engagement and Recruitment Centers, Biopharma Informatic is designed to precisely predict and achieve enrollment and retention goals, especially for challenging and high-volume research programs. The constant developments made by Biopharma Informatic focus on improving processes such as recruitment, screening, consenting, retention, and follow-up for both clients and participants.</p>
+                    <p class="c-blue">To support local outreach, each Biopharma Informatic site is backed by full-time recruitment specialists. These sites are strategically situated in diverse demographic areas to ensure fair representation in clinical trials.</p>
+                    
+                    <p class="c-blue"><i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp;
+                        Immediate enrollment support available at the beginning of the study.</p>
+                        <p class="c-blue"><i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp;Access to exclusive databases, including proprietary, physician, and practice &nbsp;&nbsp;&nbsp;&nbsp;data.</p>
+                        <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;
+                            In-house advertising solutions surpassing the effectiveness of central&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;campaigns.</p>
+                            <p class="c-blue">
+                                &nbsp;&nbsp;&nbsp; Intensive community outreach and initiatives to enhance diversity.</p>
+                                <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;&nbsp;&nbsp;Programs focused on participant adherence and retention.</p>
+                                <p class="c-blue"><i class="fa-solid fa-greater-than"></i>&nbsp;&nbsp;&nbsp;Specialty care sites offer access to unique populations, procedures, and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-bg-img">
+        <img src="./images/footer-bg1.png" alt="">
+    </div>
+    <section class="footer-section">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+<div class="footer-logo">
+    <img src="./images/logo.png" style="background-color: #032855;" alt="">
+</div>
+<br>
+    <div class="footer-icons ">
+        <a class="bg-light" target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>&nbsp;<a class="bg-light"target="_blank" href="#"><i class="fa-brands fa-tiktok"></i></a>&nbsp;<a class="bg-light" target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>&nbsp;<a class="bg-light" target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+
+        </div>
+        <div class="col-lg-3">
+            <h2>Over link</h2>
+            <p>>&nbsp; home</p>
+            <p>>&nbsp; About us</p>
+            <p>>&nbsp;  Active Trials</p>
+            <p>>&nbsp; Our Team</p>
+                <p>>&nbsp; Our Blogs</p>
+                <P>>&nbsp; PRIVACY POLICY</P>
+        </div>
+        <div class="col-lg-3">
+            <h2>Other links</h2>
+            <P>> &nbsp; Connect & Learn</P>
+            <P>>&nbsp; Our Partners</P>
+            <P>> &nbsp; Locations</P>
+            <P>> &nbsp; Careers</P>
+            <P>> &nbsp; Contact Us</P>
+            <P>> &nbsp;  Terms & Conditions</P>
+        </div>
+        <div class="col-lg-3">
+            <H2>Contact US</H2>
+            <P><i class="fa-solid fa-phone-flip"></i> &nbsp; 
+                (281) 944-3610</P>
+                <P><i class="fa-solid fa-envelope"></i> &nbsp; 
+                    info@biopharmainfo.net</P>
+                    <P><i class="fa-solid fa-location-dot"></i> &nbsp; 19255 PARK ROW #205
+                        HOUSTON,<br>&nbsp; &nbsp; &nbsp; TX 77084</P>
+        </div>
+
+    </div>
+</div>
+<hr class="line">
+<div class="footer-content text-center">© Copyright 2024 Biopharma Informatic LLC. All Rights Reserved.</div>
+    </section>
+    
+</body>
+
+</html>
