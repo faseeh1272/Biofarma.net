@@ -1,0 +1,228 @@
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #e20303; 
+    border-radius: 12px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #ec0505; 
+    }
+    
+    *,
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    body,img{
+        width: 100%;
+    }
+    
+    header {
+        background-color: #032855;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    
+    }
+    
+    .header {
+        /* background-color: #032855; */
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 10px 0px;
+    }
+    
+    .logo img {
+        width: 300px;
+    }
+    
+    ul.menu {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        gap: 20px;
+       
+    }
+    
+    ul.menu a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+       
+    }
+    
+    .btn-primary {
+        display: block;
+        padding: 5px 5px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: #e55123;
+        color: #fff;
+        border-radius: 40px;
+    }
+    
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+    section{
+        max-width: 100%;
+    }
+    
+    section.hero-section {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        padding-bottom: 110px;
+        background-image: url('./assest/images/Featured-Title-Physicians.jpg');
+        position: relative;
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+    
+    section.hero-section:before {
+        /* position: absolute; */
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: #0c263cbd;
+    }
+    .co-h{
+        text-align: center;
+        align-items: center;
+        color: white;
+        margin-top: 200px;
+        /* flex: 0 0 auto; */
+        width: 16.6666666667%;
+        margin-left: 30px;
+        font-weight: bold;
+    }
+    .co-p{
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        font-size: large;
+    }
+
+    /* study section start */
+
+
+    .c-blue{
+        color: #032855;
+    }
+    .bg{
+        background-color: #cdd4dd;
+        padding: 5px;
+    }
+
+
+    /* signup-section start */
+
+    .form-h{
+        font-weight: bold;
+      
+    }
+
+.copd-img{
+    border-radius: 12px;
+}
+.Trail-btn{
+    padding: 10px;
+    color: white;
+    background-color: #032855;
+    border-radius: 20px;
+    margin: 20px;
+}
+.form-control{
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    padding: .375rem .375rem;
+    color: #495057;
+    background-clip: padding-box;
+    /* border: 1px solid #ced4da; */
+    border-radius: .25rem;
+    line-height: 2.25rem;
+}
+input{
+    padding: .375rem .375rem;
+    color: #495057;
+    border: 1px solid #ced4da;
+    width: 100%;
+    border-radius: .25rem;
+    line-height: 2.25rem;
+}
+.form-check-input{
+    width: 18px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    margin-top: .3rem;
+    margin-left: -1.25rem;
+}
+.form-check{
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+}
+label{
+    color: #7e7e7e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.form-check-label{
+  margin-bottom: 5px;
+}
+.last-s{
+    padding: 10px 20px;
+    color: white;
+    background-color: #032855;
+    border-radius: 20px;
+    font-size: large;
+}
+.footer-section{
+    padding: 20px;
+    background-color: #032855;
+    color: white;
+    }
+    .footer-icons a{
+    padding: 10px;
+    border-radius: 35px;
+    margin: 5px;
+    color: #032855;
+    
+    }
+
+
+    
