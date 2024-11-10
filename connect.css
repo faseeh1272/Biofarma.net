@@ -1,0 +1,94 @@
+
+*,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #032855;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.header {
+    /* background-color: #032855; */
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 0px;
+}
+
+.logo img {
+    width: 300px;
+}
+
+ul.menu {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+   
+}
+
+ul.menu a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+   
+}
+
+.btn-primary {
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #e55123;
+    color: #fff;
+    border-radius: 40px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+section.hero-section {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 110px;
+    background-image: url('https://www.biopharmainfo.net/assets/img/home1-banner.jpg');
+    position: relative;
+}
+
+section.hero-section:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #0c263cbd;
+}
+
+.header-content {
+    position: relative;
+    padding: 40px 0px;
+    
+}
