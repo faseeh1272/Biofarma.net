@@ -13,6 +13,9 @@ ul {
 a {
     text-decoration: none;
 }
+img {
+    max-width: 100%;
+}
 
 header {
     background-color: #032855;
@@ -75,7 +78,7 @@ section.hero-section {
     background-size: cover;
     width: 100%;
     padding-bottom: 110px;
-    background-image: url('https://www.biopharmainfo.net/assets/img/home1-banner.jpg');
+    background-image: url('	https://www.biopharmainfo.net/assets/img/our_partners_banner.jpg');
     position: relative;
 }
 
@@ -92,3 +95,113 @@ section.hero-section:before {
     padding: 40px 0px;
     
 }
+
+.h-header-content{
+    margin-top: 80px;
+}
+
+.c-white{
+    color: white;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 40px;
+    
+}
+.p-white{
+color: white;
+text-align: center;
+font-weight: 600;
+}
+video{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+
+}
+
+.c-blue{
+    text-align: center;
+    color: #032855;
+    font-weight: 700;
+}
+.p-blue{
+    color: #032855;
+    font-weight: bold;
+    margin: 15px;
+}
+.c-blue-p{
+    margin: 10px;
+    color: #032855;
+}
+
+.clinical-img{
+    border-radius: 12px;
+    height: 232px;
+    width: 348px;
+
+}
+.box{
+    /* box-shadow: black 2px 2px 7px 7px; */
+    margin-bottom: 20px;
+
+}
+.box:hover{
+    box-shadow: rgb(100, 98, 98) 2px 2px 7px 7px;
+    transition: .1s;
+    border-radius:10px;
+    /* margin-top: 20px;
+    margin-bottom: 30px; */
+    /* float: left; */
+}
+
+.slider-image{
+    width: 100%;
+    height: 540px;
+}
+
+.event-img{
+    border-radius: 15px;
+}
+
+.event-img:hover{
+    box-shadow: rgb(100, 98, 98) 2px 2px 7px 7px;
+    transition: .1s;
+}
+
+.partner-img{
+
+    width: 190px;
+    height: auto;
+    object-fit: cover;
+}
+.partnr-img{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgb(100, 98, 98) 2px 2px 7px 7px;
+    transition: .1s;
+    border-radius: 12px;
+}
+.last-s{
+    padding: 10px 20px;
+    color: white;
+    background-color: #032855;
+    border-radius: 20px;
+    font-size: large;
+}
+.footer-section{
+    padding: 20px;
+    background-color: #032855;
+    color: white;
+    }
+    .footer-icons a{
+    padding: 10px;
+    border-radius: 35px;
+    margin: 5px;
+    color: #032855;
+    
+    }
